@@ -1,0 +1,590 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZALDER AIPRO - Tecnologia e Marketing de Performance</title>
+
+
+    <!-- Google tag (gtag.js) - GA4 -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0GMJX4SEGS"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+
+      gtag('config', 'G-0GMJX4SEGS');
+    </script>
+
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Estratégia Digital Estruturada em Inteligência Artificial para captar clientes em Sumaré e Campinas. Saia do amadorismo visual.">
+    <meta name="robots" content="index, follow">
+
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "ZALDER AIPRO",
+      "url": "https://www.zalder.com.br",
+      "telephone": "+5519983031337",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Sumaré",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "areaServed": {
+        "@type": "City",
+        "name": "Sumaré",
+        "sameAs": "https://pt.wikipedia.org/wiki/Sumaré"
+      }
+    }
+    </script>
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+
+
+    <!-- Estilos / The Visual DNA -->
+    <style>
+        :root {
+            --neon-blue: #00f2ff;
+            --dark-bg: #0a0a0a;
+            --card-bg: #151515;
+            --text-gray: #b0b0b0;
+            --font-headings: 'Space Grotesk', sans-serif;
+            --font-body: 'Inter', sans-serif;
+        }
+
+
+        * { margin: 0; padding: 0; box-sizing: border-box; scroll-behavior: smooth; }
+
+
+        body {
+            background-color: var(--dark-bg);
+            color: #ffffff;
+            font-family: var(--font-body);
+            line-height: 1.7;
+            overflow-x: hidden;
+            transition: all 0.3s ease;
+        }
+
+
+        h1, h2, h3, h4, h5, h6 { font-family: var(--font-headings); }
+
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 5%; }
+
+
+        /* Header e Navegação */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #fff;
+        }
+
+
+        .logotipo-destaque { color: var(--neon-blue); }
+
+
+        nav.menu a {
+            color: var(--text-gray);
+            text-decoration: none;
+            margin-left: 30px;
+            font-size: 0.95rem;
+            transition: 0.3s;
+        }
+
+
+        nav.menu a:hover { color: var(--neon-blue); }
+
+
+        .btn-neon {
+            border: 1px solid var(--neon-blue);
+            color: var(--neon-blue);
+            background: transparent;
+            padding: 12px 24px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-family: var(--font-headings);
+            font-size: 0.9rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 10px rgba(0, 242, 255, 0.1);
+        }
+
+
+        .btn-neon:hover {
+            background: var(--neon-blue);
+            color: var(--dark-bg);
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.5);
+        }
+
+
+        /* Hero Section */
+        .hero {
+            padding: 120px 0;
+            text-align: center;
+            position: relative;
+        }
+
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 50%; left: 50%;
+            width: 600px; height: 600px;
+            transform: translate(-50%, -50%);
+            background: radial-gradient(circle, rgba(0,242,255,0.08) 0%, rgba(10,10,10,0) 70%);
+            pointer-events: none;
+            z-index: -1;
+        }
+
+
+        .hero h1 {
+            font-size: 3.5rem;
+            line-height: 1.1;
+            margin-bottom: 25px;
+            letter-spacing: -1px;
+        }
+
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            max-width: 750px;
+            margin: 0 auto 40px;
+        }
+
+
+        /* Grid de Serviços */
+        .services-section { padding: 100px 0; background: #0f0f0f; }
+        .section-header { text-align: center; margin-bottom: 60px; }
+        .section-header h2 { font-size: 2.5rem; margin-bottom: 15px; }
+        .section-header p { color: var(--text-gray); }
+
+
+        .card-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+
+        .aipro-card {
+            background: var(--card-bg);
+            padding: 40px 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+
+        .aipro-card h3 {
+            color: #fff;
+            margin: 15px 0;
+            font-size: 1.4rem;
+        }
+
+
+        .aipro-card p {
+            color: var(--text-gray);
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+
+        .card-icon { font-size: 2.5rem; margin-bottom: 10px; }
+
+
+        .aipro-card:hover {
+            transform: translateY(-10px) scale(1.03);
+            border-color: var(--neon-blue);
+            box-shadow: 0 0 15px rgba(0, 242, 255, 0.3);
+        }
+
+
+        .card-button {
+            display: inline-block;
+            margin-top: 20px;
+            color: var(--neon-blue);
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.3s;
+        }
+
+
+        .card-button:hover {
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px var(--neon-blue);
+        }
+
+
+        /* Metodologia Stepper */
+        .methodology { padding: 100px 0; }
+        .stepper {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 40px;
+            position: relative;
+        }
+
+
+        .step-item {
+            position: relative;
+            padding-top: 30px;
+            border-top: 2px solid #222;
+        }
+
+
+        .step-item:hover { border-color: var(--neon-blue); transition: 0.3s; }
+
+
+        .step-number {
+            position: absolute;
+            top: -18px; left: 0;
+            background: var(--dark-bg);
+            color: var(--neon-blue);
+            font-family: var(--font-headings);
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding-right: 15px;
+        }
+
+
+        .step-item h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        .step-item p { color: var(--text-gray); font-size: 0.95rem; }
+
+
+        /* Sobre / Copywriter */
+        .about-section {
+            padding: 100px 0;
+            background: #0d0d0d;
+        }
+
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1.2fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+
+        .copy-text h2 { font-size: 2.5rem; margin-bottom: 25px; line-height: 1.2; }
+        .copy-text p { margin-bottom: 20px; font-size: 1.05rem; color: #ccc; }
+        .copy-text strong { color: #fff; }
+
+
+        .highlight-box {
+            padding: 30px;
+            border-left: 3px solid var(--neon-blue);
+            background: rgba(0, 242, 255, 0.03);
+            margin-top: 30px;
+        }
+
+
+        /* Footer */
+        footer {
+            padding: 60px 0;
+            border-top: 1px solid #222;
+            text-align: center;
+            background: #050505;
+        }
+
+
+        footer h3 { font-size: 1.8rem; margin-bottom: 25px; }
+        .footer-selo {
+            color: var(--text-gray);
+            font-size: 0.9rem;
+            margin-top: 40px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+
+        /* WhatsApp Float Widget */
+        .wa-float {
+            position: fixed;
+            bottom: 40px; right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 1rem;
+            font-family: var(--font-headings);
+            font-weight: bold;
+            box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+            z-index: 1000;
+            text-decoration: none;
+            display: flex; align-items: center; gap: 10px;
+            transition: all 0.3s;
+        }
+
+
+        .wa-float:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.6);
+        }
+
+
+        /* Responsive */
+        @media (max-width: 900px) {
+            .about-content { grid-template-columns: 1fr; }
+            .hero h1 { font-size: 2.5rem; }
+            nav.menu { display: none; } /* oculto no mobile para focar no CTA */
+            
+            /* Diminuir blur neon no mobile */
+            .btn-neon { box-shadow: 0 0 5px rgba(0, 242, 255, 0.1); }
+            .aipro-card:hover { transform: translateY(0) scale(1.01); box-shadow: 0 0 8px rgba(0, 242, 255, 0.3); }
+        }
+
+
+        /* CSS Modo de Alto Contraste (Obrigatório WCAG) */
+        .high-contrast {
+            filter: contrast(1.5) grayscale(1) !important;
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+        .high-contrast * {
+            border-color: #fff !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- Acessibilidade WCAG -->
+    <div id="aipro-accessibility-bar" style="position: fixed; bottom: 20px; left: 20px; z-index: 9999; display: flex; gap: 10px;">
+        <button onclick="toggleHighContrast()" title="Alto Contraste" style="background: #151515; border: 1px solid #00f2ff; color: #00f2ff; padding: 10px; border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px rgba(0,242,255,0.2);">🌓</button>
+        <button onclick="changeFontSize(2)" title="Aumentar Fonte" style="background: #151515; border: 1px solid #00f2ff; color: #00f2ff; padding: 10px; border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px rgba(0,242,255,0.2);">A+</button>
+        <button onclick="changeFontSize(-2)" title="Diminuir Fonte" style="background: #151515; border: 1px solid #00f2ff; color: #00f2ff; padding: 10px; border-radius: 50%; cursor: pointer; box-shadow: 0 0 10px rgba(0,242,255,0.2);">A-</button>
+    </div>
+
+
+    <!-- Navegação -->
+    <div class="container">
+        <header>
+            <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+                <img src="logo-zalder.jpg" alt="Zalder AIPRO Logo" style="height: 65px; width: 65px; border-radius: 50%; box-shadow: 0 0 15px rgba(0, 242, 255, 0.4); object-fit: cover;">
+                <span>ZALDER <span class="logotipo-destaque">AIPRO</span></span>
+            </div>
+            <nav class="menu">
+                <a href="#inicio">Início</a>
+                <a href="#servicos">Serviços</a>
+                <a href="#metodologia">Metodologia IA</a>
+                <a href="#contato">Contato</a>
+                <a href="https://www.instagram.com/zalder_aipro?igsh=aGhicWUyNm8yaXVh" target="_blank" style="display: inline-flex; align-items: center; gap: 5px;" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                    Instagram
+                </a>
+            </nav>
+            <a href="https://api.whatsapp.com/send?phone=5519983031337&text=Olá%20Zalder,%20vi%20o%20site%20AIPRO%20e%20quero%20uma%20consultoria%20para%20minha%20empresa%20em%20Sumaré." class="btn-neon" target="_blank">Consultoria Estratégica</a>
+        </header>
+
+
+        <!-- Hero Section -->
+        <section class="hero" id="inicio">
+            <h1>Estratégia Digital Estruturada em Inteligência Artificial para Captar Clientes Reais Todos os Dias.</h1>
+            <p>Saia do amadorismo visual e construa uma infraestrutura de vendas focada em performance e dados em Sumaré e região.</p>
+            <a href="#servicos" class="btn-neon" style="background: var(--neon-blue); color: var(--dark-bg);">Iniciar Diagnóstico Gratuito</a>
+        </section>
+    </div>
+
+
+    <!-- Seção Copywriter / Otimização de Vendas -->
+    <section class="about-section">
+        <div class="container about-content">
+            <div class="copy-text">
+                <h2>O Fim dos Sites "Cartão de Visita". O Início da Sua Infraestrutura Digital.</h2>
+                <p>Sites comuns são passivos. Eles esperam o cliente agir. Na economia atual, isso é rasgar orçamento. Se o seu portal não minera, qualifica e automatiza o desejo do usuário, ele é apenas um peso morto digital.</p>
+                <p>A *ZALDER AIPRO* arquiteta ecossistemas de conversão nativamente ancorados em *Inteligência Artificial* e *Arquitetura de Dados*. Nós transformamos tráfego cru em leads quentes mapeando cada milissegundo comportamental do usuário.</p>
+                
+                <div class="highlight-box">
+                    <p><strong>A Solução ZALDER:</strong> Uma máquina de vendas projetada para empresas de Sumaré e região de Campinas que exigem escala. Unimos métricas de <em>Core Web Vitals</em> ao refinado Design UX, empacotando tudo sob o motor de dados do GA4 para garantir <strong>ROI e previsibilidade absoluta</strong>.</p>
+                </div>
+            </div>
+            <div>
+                <!-- Foto do Especialista -->
+                <div style="width: 100%; height: 450px; border: 1px solid #222; border-radius: 12px; display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; box-shadow: 0 0 20px rgba(0, 242, 255, 0.1);">
+                    <img src="foto-perfil.jpg" alt="Especialista Zalder AIPRO" style="width: 100%; height: 100%; object-fit: cover; object-position: center 15%; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Grid de Serviços -->
+    <section class="services-section" id="servicos">
+        <div class="container">
+            <div class="section-header">
+                <h2>O Ecossistema AIPRO</h2>
+                <p>O arsenal tecnológico para dominar o mercado.</p>
+            </div>
+            <div class="card-container">
+                
+                <div class="aipro-card">
+                    <div class="card-icon">⚡</div>
+                    <h3>Arquitetura de Conversão</h3>
+                    <p>Design guiado por dados estruturais. Foco extremo em velocidade de página (Core Web Vitals) e persuasão visual de funil, projetado para superalimentar as conversões mobile.</p>
+                    <a href="#contato" class="card-button">Auditoria de Site</a>
+                </div>
+
+
+                <div class="aipro-card">
+                    <div class="card-icon">📈</div>
+                    <h3>Inteligência de Dados</h3>
+                    <p>Mapeamento cirúrgico de cada clique de tela (GA4 / Pixel). Implementamos tracking full-funnel para garantir que suas verbas de marketing girem exclusivamente em métricas matemáticas.</p>
+                    <a href="#contato" class="card-button">Mapear Eventos</a>
+                </div>
+
+
+                <div class="aipro-card">
+                    <div class="card-icon">🤖</div>
+                    <h3>Ecossistemas de IA</h3>
+                    <p>Automação hiper-escalável. Implementamos fluxos alimentados por IA avançada para qualificar leads quentes, gerando rotinas para converter leads em clientes reais 24/7 sem intervenção manual.</p>
+                    <a href="#contato" class="card-button">Saber Mais</a>
+                </div>
+
+
+                <div class="aipro-card">
+                    <div class="card-icon">📍</div>
+                    <h3>SEO Estratégico Local</h3>
+                    <p>Domínio nas buscas orgânicas em Sumaré e Campinas. Arquitetura on-page para extrair o máximo das ferramentas de pesquisa, sugando as buscas segmentadas diretamente aos seus funis.</p>
+                    <a href="#contato" class="card-button">Ativar Local Seo</a>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Metodologia Stepper -->
+    <section class="methodology" id="metodologia">
+        <div class="container">
+            <div class="section-header">
+                <h2>Metodologia Operacional IA</h2>
+                <p>Estrutura de esteira técnica ágil dividida em blocos escaláveis.</p>
+            </div>
+            
+            <div class="stepper">
+                <div class="step-item">
+                    <div class="step-number">01</div>
+                    <h3>Diagnóstico</h3>
+                    <p>Análise de dados atuais e indexamento do estado web da sua empresa.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">02</div>
+                    <h3>Estruturação</h3>
+                    <p>Design UX/UI focado estritamente na retenção da jornada de compra.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">03</div>
+                    <h3>Integração IA</h3>
+                    <p>Implementação de ferramentas inteligentes e infra de automações lógicas.</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-number">04</div>
+                    <h3>Escala</h3>
+                    <p>Monitoramento tático focado no Retorno Sobre Investimento, alimentando o sistema com machine learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="contato">
+        <div class="container">
+            <h3>Preparado para instalar o motor AIPRO em seu site?</h3>
+            <a href="https://api.whatsapp.com/send?phone=5519983031337&text=Olá%20Zalder,%20vi%20o%20site%20AIPRO%20e%20quero%20uma%20consultoria%20para%20minha%20empresa%20em%20[Nome%20da%20Cidade]." class="btn-neon" target="_blank" style="margin-top: 20px; display: inline-block;">Agendar Diagnóstico Hoje</a>
+            
+            <div style="margin-top: 30px;">
+                <a href="https://www.instagram.com/zalder_aipro?igsh=aGhicWUyNm8yaXVh" target="_blank" style="color: var(--neon-blue); text-decoration: none; display: inline-flex; align-items: center; gap: 8px; font-weight: 500; font-size: 1.1rem; transition: 0.3s;" onmouseover="this.style.textShadow='0 0 8px var(--neon-blue)'" onmouseout="this.style.textShadow='none'">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.036 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
+                    </svg>
+                    Acompanhe no Instagram
+                </a>
+            </div>
+            
+            <p class="footer-selo">Zalder AIPRO - Hub de Tecnologia em Sumaré-SP</p>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Widget Float -->
+    <a href="https://api.whatsapp.com/send?phone=5519983031337&text=Olá%20Zalder,%20vi%20o%20site%20AIPRO%20e%20quero%20uma%20consultoria%20para%20minha%20empresa%20em%20[Nome%20da%20Cidade]." class="wa-float" target="_blank">
+        📲 Conversar via WhatsApp
+    </a>
+
+
+    <!-- Scripts Operacionais (Acessibilidade & GA4 Analytics) -->
+    <script>
+        // WCAG Alta Acessibilidade
+        function toggleHighContrast() {
+            document.body.classList.toggle('high-contrast');
+        }
+
+
+        function changeFontSize(step) {
+            const root = document.documentElement;
+            const currentSize = parseFloat(getComputedStyle(root).fontSize || 16);
+            root.style.fontSize = (currentSize + step) + 'px';
+        }
+
+
+        // Monitoramento de Cliques nos Cards de Serviço da Zalder AIPRO (GA4 Mock/Integração)
+        document.querySelectorAll('.aipro-card').forEach(card => {
+            card.addEventListener('click', function() {
+                // Extrai o nome do serviço do H3 dentro do card
+                const servicoNome = this.querySelector('h3').innerText;
+                
+                // Triggers de redirecionamento ou ativação local
+                console.log("Card Ativado: ", servicoNome);
+
+
+                // Envia o evento personalizado para o GA4
+                if (typeof gtag !== 'undefined') {
+                    gtag('event', 'clique_servico_aipro', {
+                        'service_name': servicoNome,
+                        'region_focus': 'Sumaré-SP', // Tag geográfica estratégica
+                        'event_category': 'Interação de Conversão',
+                        'value': 1
+                    });
+                    console.log(GA4: Evento de clique em [${servicoNome}] registrado com sucesso.);
+                }
+            });
+        });
+    </script>
+</body>
+</html>
